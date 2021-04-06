@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title> To-Do App </title>
+  </head>
+
+  <body>
+    <header>
+         <h1 class="text-center">To-Do App</h1>
+      </header>
+    <div class="container">
+      <section class="main-content">
+        <div class="row">
+          <div class="col">
+            <div class="primary-content" id="primary">
+              <h2> Add Task </h2>
+              <span>Task count: <span id="task-count"></span></span>
+               <form id="add-task" action="#">
+                  <div class="form-group">
+                    <label for="task-name">Task Name:</label>
+                    <input type="text" class="form-control" id="task-name" placeholder="Task name">
+                  </div>
+                  <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea class="form-control" name="task-description" id="task-description"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Task</button>
+               </form> <!-- .form -->
+            </div> <!-- .primary-content -->                        
+          </div> <!-- .col -->
+
+          <div class="col">
+            <div class="secondary-content">
+              <h2> Task List: </h2>
+              <span>Open Tasks: <span id="open-count"></span></span>
+            </div>
+            <div id="task-list">
+              <ul class="todo-list"></ul>
+            </div>
+            <!-- <button class="button center" onClick="addTodo()">Agregar Tarea</button> -->    
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+        
+    
+      </section>
+      </div> <!-- container -->
+
+      
+    <script src="./script.js"></script>
+  </body>
+</html>
